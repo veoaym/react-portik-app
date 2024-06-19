@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* App.css */
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% de la hauteur de la vue */
+    
+}
+
+/* Rangées */
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.header-row {
+    flex: 0 0 10%; /* 10% de la hauteur totale */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le contenu horizontalement */
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Nécessaire pour le positionnement absolu du titre */
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 50px;
+}
+
+.title {
+    color: #EE1C25; /* Couleur rouge du logo Veolia */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; /* Texte en gras */
+    font-size: 2em; /* Taille du texte, ajustez selon vos besoins */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Deuxième rangée */
+.middle-row {
+    flex: 0 0 30%; /* 30% de la hauteur totale */
+    justify-content: space-around; /* Espace entre les composants */
+    align-items: center;
+}
+
+/* Troisième rangée */
+.footer-row {
+    flex: 0 0 60%; /* 60% de la hauteur totale */
+    justify-content: space-around; /* Espace entre les images */
+    align-items: center;
+}
+
+/* Composants de la deuxième rangée */
+.component {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Images de la troisième rangée */
+.footer-image {
+    max-width: 30%; /* S'assure que les images ne dépassent pas 30% de la largeur de la rangée */
+    height: auto;
+}
+body {
+    background-color: #222;
+  }
